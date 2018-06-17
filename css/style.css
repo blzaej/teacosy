@@ -11,11 +11,28 @@ body {
     color: seashell;
     background-color: black;
     text-align: center;
+    opacity: 0.9;
 }
 
 a {
     color: seashell;
     text-decoration: underline;
+}
+
+a:hover {
+    color: white;
+}
+
+h2, h4 {
+    margin: 10px;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+    height: 120px;
 }
 
 /* Header Styles */
@@ -28,6 +45,7 @@ header {
     width: 100%;
     height: 69px;
     border-bottom: 1px solid seashell;
+    background-color: black;
 }
 
 nav span {
@@ -45,3 +63,52 @@ nav span {
   height: 50px;
 }
 
+/* Mission Styles */
+
+.mission {
+    padding: 70px 0px 50px 0px;
+    /* margin-top: 100px; Why does this add additional space to the header? */
+}
+
+.mission-background {
+    background: url(../img/img-mission-background.jpg);
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Tea of the Month Section */
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.box img {
+    width: 300px;
+    height: 200px;
+}
+
+/* Location Section */
+
+.locations {
+    background: url(../img/img-locations-background.jpg);
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
