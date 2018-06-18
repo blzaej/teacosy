@@ -23,7 +23,7 @@ a:hover {
     color: white;
 }
 
-h2, h4 {
+h2, h4, h5 {
     margin: 10px;
 }
 
@@ -32,10 +32,10 @@ h2, h4 {
     flex-direction: column;
     justify-content: center;
     background-color: rgba(0,0,0,0.7);
-    height: 120px;
+    height: 160px;
 }
 
-/* Header Styles */
+/* Header Section */
 
 header {
     display: flex;
@@ -63,11 +63,11 @@ nav span {
   height: 50px;
 }
 
-/* Mission Styles */
+/* Mission Section */
 
 .mission {
     padding: 70px 0px 50px 0px;
-    /* margin-top: 100px; Why does this add additional space to the header? */
+    /* margin-top: 100px; Why does this move the header down? */
 }
 
 .mission-background {
@@ -109,6 +109,35 @@ nav span {
     width: 1200px;
     height: 500px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 70px auto 40px auto;
+}
+
+.locations-boxes {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 auto;
+}
+
+.locations-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    padding: 0px 10px;
+    margin: 0px 20px;
+    width: 300px;
+    height: 280px;
+}
+
+.locations-box span, h3 {
+    margin: 20px 0px;
+}
+
+/* Footer Section */
+
+footer {
+    padding: 30px 20px;
+    text-align: left;
+}
